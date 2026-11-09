@@ -1,0 +1,102 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Paymid Framer Migration Proposal</title>
+<style>
+@page{size:A4;margin:18mm 16mm}
+:root{--ink:#14161a;--mute:#5b6270;--line:#e3e6eb;--acc:#1f5eff;--soft:#f3f6ff}
+body{font-family:Helvetica,Arial,sans-serif;color:var(--ink);font-size:10.5pt;line-height:1.5;margin:0;background:#fff}
+h1{font-size:24pt;margin:0 0 4px;letter-spacing:-.5px}
+h2{font-size:13pt;margin:22px 0 8px;color:var(--acc);border-bottom:1px solid var(--line);padding-bottom:4px}
+h3{font-size:11pt;margin:12px 0 4px}
+.top{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:3px solid var(--acc);padding-bottom:12px;margin-bottom:14px}
+.brand{font-weight:800;font-size:16pt;color:var(--acc)} .mute{color:var(--mute)} small{color:var(--mute)}
+table{width:100%;border-collapse:collapse;margin:6px 0;font-size:9.8pt}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--soft);font-weight:700} td.n,th.n{text-align:right;white-space:nowrap}
+tr.tot td{font-weight:800;border-top:2px solid var(--ink);background:var(--soft)}
+.box{background:var(--soft);border-left:4px solid var(--acc);padding:10px 14px;margin:10px 0}
+ul{margin:4px 0 4px 18px;padding:0} li{margin:2px 0}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:8px 0}
+.kpi{border:1px solid var(--line);border-radius:6px;padding:8px;text-align:center}.kpi b{display:block;font-size:17pt;color:var(--acc)}
+.pb{page-break-before:always}
+</style></head><body>
+<div class="top"><div><div class="brand">Brightlinks</div><small>Web development &amp; SEO</small></div>
+<div style="text-align:right"><small>Proposal for</small><br><b>Paymid</b><br><small>9 November 2026 · Valid for 30 days</small></div></div>
+
+<h1>paymid.com → Framer migration</h1>
+<p class="mute">Fixed-price proposal to rebuild paymid.com on the Saro Framer template. Your design team handles images and visual design. We handle content, structure and pages.</p>
+
+<h2>1. What we found</h2>
+<p>Before quoting, we audited your current WordPress site (Elementor/UiCore theme, sitemap and public page index) and the Saro template.</p>
+<div class="grid">
+<div class="kpi"><b>46</b>live pages</div><div class="kpi"><b>151</b>blog posts</div><div class="kpi"><b>18</b>pages in Saro</div><div class="kpi"><b>~200</b>URLs to redirect</div></div>
+<table><tr><th>Group on paymid.com</th><th class="n">Pages</th><th>Maps to Saro</th></tr>
+<tr><td><b>Core:</b> Home, Product, Pricing, Company, Contact, Get Started, Partners, Connections, Solutions Finder, Blog index, Thank you</td><td class="n">11</td><td>Home, Pricing, About, Customers, Contact, Blog</td></tr>
+<tr><td><b>Product / feature pages:</b> Gateway, Smart Routing, Retry, Network Tokenization, Hosted Payment Fields, Payment Link, KYC Verification, Fraud Prevention, Currency Conversion, Dynamic Withdrawals, Customer Promotion, Process Payments, Optimize Flow, Manage Operations, Analyze Results, Expand Globally, PSP Platform</td><td class="n">17</td><td>Product page layouts (6 included, extended into one reusable product layout)</td></tr>
+<tr><td><b>Industries:</b> Crypto, E-commerce, Forex, Gambling, Prop Trading, Travel · <b>Regions:</b> Europe, Asia, Middle East, North America, South America · <b>Partner:</b> B2Core</td><td class="n">12</td><td>Solutions CMS collection + detail page</td></tr>
+<tr><td><b>Legal:</b> Privacy Policy, Terms &amp; Conditions, Master Terms of Use, DPA, SLA, Editorial Guidelines</td><td class="n">6</td><td>Privacy / Terms layout</td></tr>
+<tr><td><b>Blog posts</b></td><td class="n">151</td><td>Blog CMS collection + detail page</td></tr></table>
+<p><small>Excluded: test and duplicate pages we found (/paymid111/, /product-clone/). They will be redirected, not rebuilt.</small></p>
+<div class="box"><b>Good fit.</b> Saro is built for fintech and payment products. It already has mega-menu navigation, product pages, Solutions and Blog CMS collections, plus contact and newsletter forms. That means we can reuse it instead of building custom layouts, and your site stays consistent and easy to edit.</div>
+
+<h2>2. Scope of work</h2>
+<h3>A. Setup &amp; information architecture</h3>
+<ul><li>Saro remixed into your Framer workspace. Brand colors, text styles and buttons set once in the design system.</li>
+<li>Sitemap and navigation agreed with you before any build. The mega menu groups Product, Solutions (industries and regions) and Company.</li>
+<li>Global header, mega menu, footer, CTA blocks and 404 page.</li></ul>
+<h3>B. Page build &amp; content migration (46 pages)</h3>
+<ul><li>11 core pages built individually on the matching Saro layouts, with all existing copy migrated and sections adapted to your content.</li>
+<li>17 product pages built on one reusable Framer product layout made from Saro's product pages, then filled page by page. You can add future products in minutes.</li>
+<li>12 industry, region and partner pages built as a Solutions CMS collection, so your team edits them like database entries.</li>
+<li>6 legal pages migrated as formatted text pages.</li>
+<li>Image placeholders marked with the sizes your design team needs. Current images kept wherever they still fit.</li></ul>
+<h3>C. Blog migration (151 posts)</h3>
+<ul><li>Posts exported from WordPress, cleaned of Elementor markup, and imported into the Framer Blog CMS with title, slug, date, author, category, featured image and body.</li>
+<li>Formatting spot-checked across all posts. Broken embeds and internal links fixed.</li></ul>
+<h3>D. Forms &amp; integrations</h3>
+<ul><li>Contact, Get Started and newsletter forms rebuilt in Framer and connected to HubSpot, which your site already uses, or another destination you choose.</li>
+<li>Thank-you page, the HubSpot tracking script and GA4/GTM moved over.</li></ul>
+<h3>E. Responsive, SEO &amp; launch</h3>
+<ul><li>Every page checked and adjusted on desktop, tablet and mobile.</li>
+<li>Current SEO titles and meta descriptions migrated (not rewritten), plus alt text, Open Graph images and clean slugs that match the current URLs wherever possible.</li>
+<li>Full 301 redirect map of about 200 URLs, so you keep your Google rankings and backlinks.</li>
+<li>Pre-launch QA (links, forms, speed, favicon, sitemap), domain connection, Google Search Console resubmission and a 7-day post-launch check.</li>
+<li>Recorded handover video showing how your team edits pages, the CMS and the blog.</li></ul>
+
+<h2 class="pb">3. Fixed price</h2>
+<table><tr><th>Work package</th><th class="n">Est. hours</th><th class="n">Price (USD)</th></tr>
+<tr><td>A. Setup, design system, IA, navigation &amp; footer</td><td class="n">10</td><td class="n">550</td></tr>
+<tr><td>B1. 11 core pages</td><td class="n">33</td><td class="n">1,800</td></tr>
+<tr><td>B2. Reusable product layout + 17 product pages</td><td class="n">30</td><td class="n">1,650</td></tr>
+<tr><td>B3. Solutions CMS + 12 industry, region and partner pages</td><td class="n">9</td><td class="n">500</td></tr>
+<tr><td>B4. 6 legal pages</td><td class="n">5</td><td class="n">250</td></tr>
+<tr><td>C. Blog migration (151 posts)</td><td class="n">14</td><td class="n">750</td></tr>
+<tr><td>D. Forms &amp; integrations (HubSpot, GA4/GTM)</td><td class="n">4</td><td class="n">200</td></tr>
+<tr><td>E. Responsive pass, SEO migration, redirects, launch &amp; handover</td><td class="n">22</td><td class="n">1,150</td></tr>
+<tr class="tot"><td>Total, fixed price</td><td class="n">127 h</td><td class="n">6,850 USD</td></tr></table>
+<p><small>The price is fixed: if a package takes longer than estimated, we absorb it. Hours are shown only for transparency.</small></p>
+
+<h3>Milestones</h3>
+<table><tr><th>#</th><th>Deliverable</th><th>Timing</th><th class="n">USD</th></tr>
+<tr><td>1</td><td>Sitemap approved, design system, navigation, footer, Home and the other core pages on a staging link</td><td>Week 1–2</td><td class="n">2,000</td></tr>
+<tr><td>2</td><td>17 product pages, Solutions CMS with 12 pages, legal pages</td><td>Week 2–3</td><td class="n">2,200</td></tr>
+<tr><td>3</td><td>Blog migration (151 posts), forms and integrations</td><td>Week 4</td><td class="n">1,250</td></tr>
+<tr><td>4</td><td>Responsive pass, SEO, redirect map, launch, handover video, 7-day check</td><td>Week 5</td><td class="n">1,400</td></tr></table>
+
+<div class="box"><b>Prefer to start smaller?</b> <b>Phase 1 (4,200 USD, about 3 weeks)</b> covers milestones 1 and 2 plus the launch tasks for those pages. The blog stays on WordPress under <i>blog.paymid.com</i> until Phase 2 (2,650 USD).</div>
+
+<h2>4. Timeline</h2>
+<p><b>5 weeks</b> from kickoff, provided we have Framer workspace access, WordPress admin (or a full export) and timely feedback. Each milestone is reviewed on a live staging link.</p>
+
+<h2>5. Revisions &amp; out of scope</h2>
+<ul><li><b>Included:</b> two revision rounds per milestone on structure, layout and content placement.</li>
+<li><b>Not included:</b> new visual design or images (your design team), new copywriting or rewriting, translations, custom code components beyond Framer's native features, custom interactive calculators, Framer plan and domain fees, and ongoing maintenance.</li>
+<li>Pages added beyond the 46 listed: 150 USD per standard page, agreed in writing before the work starts.</li></ul>
+
+<h2>6. What we need from you</h2>
+<ul><li>Editor access to your Framer workspace (a paid site plan is needed for the CMS item count and a custom domain).</li>
+<li>WordPress admin access or a full export, and access to HubSpot and GA4.</li>
+<li>One point of contact for approvals, and your design team's preferred image hand-off method.</li></ul>
+
+<h2>7. Why Brightlinks</h2>
+<p>We regularly take an existing design plus a client's content and deliver a clean, responsive, launch-ready site. Recent examples are <b>madisonviewapartments.com</b> (built from a reference design in 9 days, 5.0 review) and <b>jennperman.com</b> (custom editable template in about 6 days, 5.0 review). SEO is our other core service, so every migration we do protects rankings with full redirect maps and metadata carried over.</p>
+<p style="margin-top:22px">Looking forward to working with you,<br><b>Marcos López Martínez</b><br>Brightlinks</p>
+</body></html>
